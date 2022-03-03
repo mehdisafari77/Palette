@@ -11,7 +11,7 @@ import Foundation
 enum UnsplashRoute {
     
     static let baseUrl = "https://api.unsplash.com/"
-    static let clientId = ""
+    static let clientId = "stNr95foFAqZzTQOUCo63BYmsGUp3ZyqrZG4Ly5c9T8"
     
     case random
     case featured
