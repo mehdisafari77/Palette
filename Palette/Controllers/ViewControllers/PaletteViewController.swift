@@ -28,6 +28,7 @@ class PaletteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemIndigo
+        configureTableView()
     }
     
     //MARK: - Helper Functions
@@ -50,6 +51,12 @@ class PaletteViewController: UIViewController {
     
     func constrainTableView() {
         paletteTableView.anchor(top: buttonStackView.bottomAnchor, bottom: self.safeArea.bottomAnchor, leading: self.safeArea.leadingAnchor, trailing: self.safeArea.trailingAnchor, paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0)
+    }
+    
+    func configureTableView() {
+        paletteTableView.delegate = self
+        paletteTableView.dataSource = self
+        paletteTableView.register(PaletteTableViewCell.self, forCellReuseIdentifier: "photoCell")
     }
     
     //MARK: - Views
@@ -101,11 +108,14 @@ class PaletteViewController: UIViewController {
 extension PaletteViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as? PaletteTableViewCell else { return UITableViewCell() }
+        
+        return cell
+        
     }
     
     

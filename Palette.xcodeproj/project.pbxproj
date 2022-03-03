@@ -19,6 +19,7 @@
 		7EA78F5624B8A3F60025BBFF /* UnsplashRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA78F5524B8A3F60025BBFF /* UnsplashRoute.swift */; };
 		B521F8B127D042B900DC44EF /* PaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B027D042B900DC44EF /* PaletteViewController.swift */; };
 		B521F8B327D05B9800DC44EF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B227D05B9800DC44EF /* UIViewExtension.swift */; };
+		B521F8B527D0638500DC44EF /* PaletteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7EA78F5524B8A3F60025BBFF /* UnsplashRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashRoute.swift; sourceTree = "<group>"; };
 		B521F8B027D042B900DC44EF /* PaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteViewController.swift; sourceTree = "<group>"; };
 		B521F8B227D05B9800DC44EF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				B521F8B027D042B900DC44EF /* PaletteViewController.swift */,
+				B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				7EA78F4924B8A2F80025BBFF /* UIColorExtension.swift in Sources */,
 				7EA78F5624B8A3F60025BBFF /* UnsplashRoute.swift in Sources */,
 				7EA78F4E24B8A3450025BBFF /* ImaggaColor.swift in Sources */,
+				B521F8B527D0638500DC44EF /* PaletteTableViewCell.swift in Sources */,
 				7EA78F5124B8A3A20025BBFF /* ImaggaService.swift in Sources */,
 				7EA78F4C24B8A3290025BBFF /* UnsplashPhoto.swift in Sources */,
 				7EA78F2F24B8A1B40025BBFF /* SceneDelegate.swift in Sources */,
