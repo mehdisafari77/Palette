@@ -15,11 +15,14 @@ class PaletteViewController: UIViewController {
         return self.view.safeAreaLayoutGuide
     }
     
+    var photos: [UnsplashPhoto] = []
+    
     //MARK: - Lifecycles
     override func loadView() {
         super.loadView()
         addAllSubViews()
         setupButtonStackView()
+        constrainTableView()
     }
     
     override func viewDidLoad() {
@@ -33,6 +36,7 @@ class PaletteViewController: UIViewController {
         self.view.addSubview(randomButton)
         self.view.addSubview(doubleRainbowButton)
         self.view.addSubview(buttonStackView)
+        self.view.addSubview(paletteTableView)
     }
     
     func setupButtonStackView() {
@@ -42,6 +46,10 @@ class PaletteViewController: UIViewController {
         buttonStackView.topAnchor.constraint(equalTo: self.safeArea.topAnchor, constant: 16).isActive = true
         buttonStackView.leadingAnchor.constraint(equalTo: self.safeArea.leadingAnchor, constant: 8).isActive = true
         buttonStackView.trailingAnchor.constraint(equalTo: self.safeArea.trailingAnchor, constant: -8).isActive = true
+    }
+    
+    func constrainTableView() {
+        paletteTableView.anchor(top: buttonStackView.bottomAnchor, bottom: self.safeArea.bottomAnchor, leading: self.safeArea.leadingAnchor, trailing: self.safeArea.trailingAnchor, paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0)
     }
     
     //MARK: - Views
@@ -81,5 +89,24 @@ class PaletteViewController: UIViewController {
                 
         return stackView
     }()
+    
+    let paletteTableView: UITableView = {
+        let tableView = UITableView()
+        
+        return tableView
+    }()
 
 } // End of Class
+
+extension PaletteViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+} // End of Extension
