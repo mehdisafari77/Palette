@@ -20,6 +20,7 @@
 		B521F8B127D042B900DC44EF /* PaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B027D042B900DC44EF /* PaletteViewController.swift */; };
 		B521F8B327D05B9800DC44EF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B227D05B9800DC44EF /* UIViewExtension.swift */; };
 		B521F8B527D0638500DC44EF /* PaletteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */; };
+		B521F8B727D0686300DC44EF /* ColorPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521F8B627D0686300DC44EF /* ColorPaletteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B521F8B027D042B900DC44EF /* PaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteViewController.swift; sourceTree = "<group>"; };
 		B521F8B227D05B9800DC44EF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteTableViewCell.swift; sourceTree = "<group>"; };
+		B521F8B627D0686300DC44EF /* ColorPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaletteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				B521F8B027D042B900DC44EF /* PaletteViewController.swift */,
 				B521F8B427D0638500DC44EF /* PaletteTableViewCell.swift */,
+				B521F8B627D0686300DC44EF /* ColorPaletteView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				7EA78F5124B8A3A20025BBFF /* ImaggaService.swift in Sources */,
 				7EA78F4C24B8A3290025BBFF /* UnsplashPhoto.swift in Sources */,
 				7EA78F2F24B8A1B40025BBFF /* SceneDelegate.swift in Sources */,
+				B521F8B727D0686300DC44EF /* ColorPaletteView.swift in Sources */,
 				7EA78F5424B8A3D60025BBFF /* UnsplashService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
