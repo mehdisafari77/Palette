@@ -113,6 +113,10 @@ extension PaletteViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "photoCell", for: indexPath) as? PaletteTableViewCell else { return UITableViewCell() }
+         
+        let photo = photos[indexPath.row]
+        
+        cell.photo = photo
         
         return cell
         
