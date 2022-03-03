@@ -11,8 +11,17 @@ import UIKit
 class PaletteViewController: UIViewController {
     
     //MARK: - Lifecycles
+    override func loadView() {
+        super.loadView()
+        self.view.addSubview(featureButton)
+        self.view.addSubview(randomButton)
+        self.view.addSubview(doubleRainbowButton)
+        self.view.addSubview(buttonStackView)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .systemIndigo
     }
     
     //MARK: - Views
